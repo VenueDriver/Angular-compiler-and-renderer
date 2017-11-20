@@ -1,0 +1,19 @@
+{
+  "name": "Angular-compiler-and-renderer",
+  "version": "1.0.0",
+  "description": "For pre-optimizing your Angular apps with an AWS Lambda service, for when you need to periodically update them with data and pre-render.",
+  "main": "handler.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha test/unit"
+  },
+  "author": "Ryan Alyn Porter",
+  "license": "MIT",
+  "devDependencies": {
+    "@angular/cli": "^1.5.2",
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2",
+    "serverless": "^1.17.0",
+    "serverless-offline": "^3.15.0",
+    "serverless-plugin-typescript": "^1.1.3"
+  }
+}
