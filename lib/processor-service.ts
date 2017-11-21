@@ -1,6 +1,6 @@
 const childProcess = require('child_process')
 
-module.exports = class ProcessorService {
+export class ProcessorService {
   async compile(angularProject) {
 
     // Run the Angular build command from the npm module.
