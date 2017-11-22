@@ -1,11 +1,12 @@
 const childProcess = require('child_process')
+const path = require('path');
 
 export class ProcessorService {
   async compile(angularProject) {
 
     // Run the Angular build command from the npm module.
     try {
-      var stdout = await this.runCLICommand('node node_modules/.bin/ng --help')
+      var stdout = await this.runCLICommand("node "+path.join(__dirname,"/../node_modules","/@angular/cli/bin/ng")+" --help")
       return {
         statusCode: 201,
         body: stdout

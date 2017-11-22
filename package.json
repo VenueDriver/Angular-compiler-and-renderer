@@ -9,7 +9,6 @@
   "author": "Ryan Alyn Porter",
   "license": "MIT",
   "devDependencies": {
-    "@angular/cli": "^1.5.2",
     "chai": "^4.0.2",
     "mocha": "^3.4.2",
     "serverless": "^1.17.0",
@@ -19,8 +18,11 @@
   "dependencies": {
     "@types/graphql": "^0.11.6",
     "@types/node": "^8.0.53",
+    "@angular/cli": "^1.5.2",
     "asynciterator": "^1.1.0",
+    "fs": "0.0.1-security",
     "install": "^0.10.2",
-    "npm": "^5.5.1"
+    "npm": "^5.5.1",
+    "path": "^0.12.7"
   }
 }
