@@ -59,12 +59,16 @@ provider:
 #    - exclude-me-dir/**
 
 functions:
-  compile:
-    handler: processor.compile
+  render:
+    handler: processor.render
     events:
       - http:
-           path: /compile
+           path: /render
            method: GET
+           request:
+            parameters:
+              querystrings:
+                url: true
 
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events

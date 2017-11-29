@@ -16,13 +16,23 @@
     "serverless-plugin-typescript": "^1.1.3"
   },
   "dependencies": {
-    "@types/graphql": "^0.11.6",
-    "@types/node": "^8.0.53",
-    "@angular/cli": "^1.5.2",
-    "asynciterator": "^1.1.0",
-    "fs": "0.0.1-security",
-    "install": "^0.10.2",
-    "npm": "^5.5.1",
-    "path": "^0.12.7"
+    "@angular/animations": "^5.0.0",
+    "@angular/common": "^5.0.0",
+    "@angular/compiler": "^5.0.0",
+    "@angular/core": "^5.0.0",
+    "@angular/forms": "^5.0.0",
+    "@angular/http": "^5.0.0",
+    "@angular/platform-browser": "^5.0.0",
+    "@angular/platform-browser-dynamic": "^5.0.0",
+    "@angular/platform-server": "^5.0.2",
+    "@angular/router": "^5.0.0",
+    "core-js": "^2.4.1",
+    "express": "^4.16.2",
+    "jquery": "^3.1.1",
+    "mydaterangepicker": "^4.1.11",
+    "owl.carousel": "^2.2.0",
+    "request": "^2.83.0",
+    "rxjs": "^5.5.2",
+    "zone.js": "^0.8.14"
   }
 }
