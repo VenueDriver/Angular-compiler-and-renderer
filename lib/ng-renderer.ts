@@ -32,7 +32,7 @@ app.engine('html', (_, options, callback) => {
 app.set('view engine', 'html');
 app.set('views', 'views');
 
-export class NgRenderer{
+class NgRenderer{
 
   render(data){
 
@@ -60,3 +60,5 @@ export class NgRenderer{
   }
 
 }
+
+module.exports = NgRenderer;
