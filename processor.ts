@@ -1,4 +1,4 @@
-const NgRenderer = require("./lib/ng-renderer").NgRenderer;
+import { NgRenderer } from 'lib/ng-renderer';
 const renderer = new NgRenderer();
 
 // module.exports.compile = async function(event, context, callback) {

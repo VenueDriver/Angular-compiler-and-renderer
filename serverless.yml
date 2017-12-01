@@ -54,7 +54,7 @@ package:
  include:
    # - include-me.js
    - views/**
-   - lib/**
+   - lib/**/*.*
 #  exclude:
 #    - exclude-me.js
 #    - exclude-me-dir/**

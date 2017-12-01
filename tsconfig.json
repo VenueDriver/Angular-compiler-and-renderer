@@ -11,7 +11,11 @@
     "typeRoots": [
       "node_modules/@types"
     ],
+    "rootDir": "./",
     "noImplicitAny": false,
     "suppressImplicitAnyIndexErrors": true
-  }
+  },
+  "include": [
+    "lib/**/*.ts"
+  ]
 }
