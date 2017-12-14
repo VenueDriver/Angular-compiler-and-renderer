@@ -3,6 +3,7 @@ import 'zone.js/dist/zone-node';
 import { renderModuleFactory } from '@angular/platform-server'
 import { enableProdMode } from '@angular/core'
 import * as express from 'express';
+import { minify } from 'html-minifier';
 
 import * as request from 'request';
 
@@ -26,7 +27,14 @@ app.engine('html', (_, options, callback) => {
   const lib = eval(options._AppServerModuleNgFactory);
   console.log("after eval");
   renderModuleFactory( lib.AppServerModuleNgFactory , opts)
-    .then(html => callback(null, html));
+    .then(html => callback(null, minify(html,{
+      removeAttributeQuotes: true,
+      minifyCSS : true,
+      minifyJS: true,
+      collapseWhitespace : true,
+      removeComments : true
+
+    })));
 });
 
 app.set('view engine', 'html');
